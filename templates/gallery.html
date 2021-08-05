@@ -1,0 +1,33 @@
+{% extends 'shared/base.html' %}
+{% block content %}
+{% load static %}
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static "css/gallery.css" %}">
+{% endblock %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+</head>
+<body>
+<h1>Hey</h1>
+    <div class="gallery">
+        <a href="{% static 'images/avenue01big.jpg' %}"><img src="{% static "images/avenue01small.jpg" %}"></a>
+        <a href="{% static 'images/avenue02big.jpg' %}"><img src="{% static "images/avenue02small.jpg" %}"></a>
+        <a href="{% static 'images/avenue03big.jpg' %}"><img src="{% static "images/avenue03small.jpg" %}"></a>
+        <a href="{% static 'images/avenue04big.jpg' %}"><img src="{% static "images/avenue04small.jpg" %}"></a>
+        <a href="{% static 'images/avenue05big.jpg' %}"><img src="{% static "images/avenue05small.jpg" %}"></a>
+        <a href="{% static 'images/avenue06big.jpg' %}"><img src="{% static "images/avenue06small.jpg" %}"></a>
+        <a href="{% static 'images/avenue07big.jpg' %}"><img src="{% static "images/avenue07small.jpg" %}"></a>
+        <a href="{% static 'images/avenue08big.jpg' %}"><img src="{% static "images/avenue08small.jpg" %}"></a>
+    </div>
+
+
+</body>
+</html>
+{% endblock %}

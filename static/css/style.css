@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Marck+Script&display=swap');
+
+
+.nav-link:hover {
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+
+}
+
+.banner {
+    position: relative;
+    width: 10px;
+    margin:100px auto;
+}
+
+.banner image{
+    position: center;
+    border: white;
+}
+
+.navbar {
+    font-size: x-large;
+    position: relative;
+
+}
+
+.nav-link {
+    font-family: 'Marck Script', cursive;
+    font-size: xx-large;
+    color: rgba(127, 101, 5, 0.7) !important;
+}

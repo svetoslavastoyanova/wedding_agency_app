@@ -1,0 +1,21 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <h1 class='text-center'>Your Testimonials</h1>
+    <div class="row">
+        {% for t in testimonials %}
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ t.image.url }}" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ t.title }}</h5>
+                        <p class="card-text">{{ t.user }}</p>
+                        <a href="{% url 'testimony details'  t.id%}" class="btn btn-primary">See details</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
