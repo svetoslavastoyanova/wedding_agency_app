@@ -1,10 +1,24 @@
 {% extends 'shared/base.html' %}
 {% block content %}
 {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-    <h2>Hello</h2>
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static "css/about.css" %}">
+{% endblock %}
 
-    <footer>
-        <div>Python Web Framework Exam Application @Svetoslava Stoyanova</div>
-    </footer>
+<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <style>
+        body {
+            background-image: url("{% static 'images/aboutus.jpg' %}");
+        }
+    </style>
+
+    <div class="container">
+    <p>
+        "Ние сме перфекционисти в работата си и ще организираме вашето събитие така, сякаш го правим за себе си. Нашата философия е да ви опознаем, да разберем какво искате, какво харесвате, какъв е вкусът ви и стилът ви… Съобразявайки се с индивидуалните ви предпочитания, ще ви предложим свежи идеи и нестандартни решения. Вършим работата си с любов, влагайки частица от себе си.  А да правим другите щастливи е нещото, което наистина ни удовлетворява и ни мотивира.
+        Ще поемем всички отговорности и задължения, като обърнем внимание дори на най-малките детайли, защото вярваме, че те превръщат обикновеното събитие в специално. Ние ще превърнем всяко събитие в стилно и изискано тържество. А за вас остава само да се забавлявате с гостите си."
+    </p>
+
+    </div>
+
+
 {% endblock %}

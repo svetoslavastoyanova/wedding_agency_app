@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-position: bottom;
+}
+
+.container{
+    height: 60vh;
+    width: 100%;
+    background: rgba(127, 101, 5, 0.30);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container p{
+    color: #ffffff;
+    margin-top: 60px;
+    font-size: x-large;
+    font-family: "Marck Script";
+
+}
