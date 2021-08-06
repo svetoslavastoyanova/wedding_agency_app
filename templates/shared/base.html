@@ -35,7 +35,7 @@
                     <a class="nav-link" href="{% url 'about us' %}">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Prices</a>
+                    <a class="nav-link" href="{% url 'prices' %}">Prices</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'show testimonials' %}">Testimonials</a>
@@ -79,10 +79,10 @@
     </div>
 </nav>
 
-<div class="container">
+
     {% block content %}
     {% endblock %}
-</div>
+
 
 
 

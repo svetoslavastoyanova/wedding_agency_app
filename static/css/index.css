@@ -1,0 +1,31 @@
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://perfectevent.bg/wp-content/uploads/2017/01/AT-312.jpg?id=736");
+    background-size: cover;
+    background-position: bottom;
+    position: static;
+}
+
+p{
+    color: white;
+    font-size: 30px;
+    line-height: 1px;
+}
+

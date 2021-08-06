@@ -1,13 +1,15 @@
 body{
     margin: 0;
     padding: 0;
+    background-size: cover;
     background-position: bottom;
+
 }
 
 .container{
     height: 60vh;
     width: 100%;
-    background: rgba(127, 101, 5, 0.30);
+    background: rgba(64, 112, 118, 0.3);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,11 +18,16 @@ body{
     border-radius: 10px;
 }
 
-.container p{
+.container h1{
+    font-style: italic;
     color: #e5e5e5;
     margin-top: 60px;
     font-size: x-large;
-    font-style: italic;
+}
 
+.container p{
+    color: #e5e5e5;
+    position: center;
+    font-style: oblique;
 
 }

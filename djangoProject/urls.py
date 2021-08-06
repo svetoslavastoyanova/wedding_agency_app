@@ -18,6 +18,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from djangoProject.wedding.views import home, about_us, gallery
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('djangoProject.wedding.urls')),
@@ -26,6 +28,7 @@ urlpatterns = [
     path('addpost/', include('djangoProject.add_post.urls')),
     path('comments/', include('djangoProject.comments.urls')),
     path('testimonials/', include('djangoProject.testimonials.urls')),
+
 
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

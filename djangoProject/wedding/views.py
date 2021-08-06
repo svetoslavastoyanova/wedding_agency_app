@@ -11,3 +11,7 @@ def about_us(request):
 
 def gallery(request):
     return render(request, 'gallery.html', {})
+
+
+def prices(request):
+    return render(request, 'prices.html', {})
