@@ -27,3 +27,4 @@ class SignInForm(AuthenticationForm):
 
     def save(self):
         return self.user
+

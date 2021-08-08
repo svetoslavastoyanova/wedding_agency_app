@@ -19,6 +19,7 @@ class AddCommentForm(forms.ModelForm):
         comment = Comment(
             text=self.cleaned_data['text'],
             post=post,
+
         )
 
         if commit:

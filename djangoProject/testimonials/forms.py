@@ -1,6 +1,6 @@
 import os
 from os.path import join
-
+from djangoProject.core.validators import first_letter_validator
 from django import forms
 from django.conf import settings
 
@@ -19,6 +19,9 @@ class TestimonialForm(BootstrapFormMixin, forms.ModelForm):
                 }
             ),
         }
+    title = forms.CharField(
+        validators=[first_letter_validator],
+    )
 
 
 class EditTestimonyForm(TestimonialForm):
@@ -26,7 +29,7 @@ class EditTestimonyForm(TestimonialForm):
         db_testimony = Testimonial.objects.get(pk=self.instance.id)
         if commit:
             image_path = join(settings.MEDIA_ROOT, str(db_testimony.image))
-            os.remove(image_path)
+            #os.remove(image_path)
         return super().save(commit)
 
     class Meta:

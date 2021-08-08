@@ -1,11 +1,8 @@
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from django.urls import reverse_lazy
-
 from djangoProject.add_post.models import MainPost
 from djangoProject.comments.forms import AddCommentForm
-from django.views.generic.edit import UpdateView, DeleteView
-
-from djangoProject.comments.models import Comment
 
 
 def post_to_comment(request, pk):
@@ -23,6 +20,7 @@ def post_to_comment(request, pk):
     return render(request, 'comments/post_to_comment.html', context)
 
 
+@login_required(login_url='sign in')
 def add_comment(request, pk):
     form = AddCommentForm(request.POST)
     if form.is_valid():
@@ -31,6 +29,8 @@ def add_comment(request, pk):
         comment.save()
 
     return redirect('post to comment', pk)
+
+
 
 
 

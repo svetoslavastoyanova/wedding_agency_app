@@ -8,7 +8,8 @@
         {% for t in testimonials %}
             <div class="col-lg-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ t.image.url }}" class="card-img-top" alt="">
+                    <img class="card-img-top" src="{{ t.image.url }}" alt="" width="140"
+                 height="250">
                     <div class="card-body">
                         <h5 class="card-title">{{ t.title }}</h5>
                         <p class="card-text">{{ t.user }}</p>

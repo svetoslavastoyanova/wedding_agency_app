@@ -28,7 +28,7 @@ def testimony_details(request, pk):
     return render(request, 'testimonial/testimonial-detail.html', context)
 
 
-@login_required
+@login_required(login_url='sign in')
 def like_testimony(request, pk):
     testimonial = Testimonial.objects.get(pk=pk)
     like_object_by_user = testimonial.like_set.filter(user_id=request.user.id) \
@@ -44,7 +44,6 @@ def like_testimony(request, pk):
     return redirect('testimony details', testimonial.id)
 
 
-@login_required
 def create_testimony(request):
     if request.method == 'POST':
         form = TestimonialForm(request.POST, request.FILES)
@@ -63,7 +62,6 @@ def create_testimony(request):
     return render(request, 'testimonial/create-testimonial.html', context)
 
 
-@login_required
 def edit_testimony(request, pk):
     testimony = Testimonial.objects.get(pk=pk)
     if request.method == 'POST':
@@ -82,7 +80,6 @@ def edit_testimony(request, pk):
     return render(request, 'testimonial/testimonial_edit.html', context)
 
 
-@login_required
 def delete_testimony(request, pk):
     testimony = Testimonial.objects.get(pk=pk)
     if request.method == 'POST':
