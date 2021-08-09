@@ -1,17 +1,12 @@
-
 {% extends 'shared/base.html' %}
 {% load static %}
 
 {% block content %}
+    {% block extrahead %}
+    <link rel="stylesheet" href="{% static "css/signin.css" %}">
+    {% endblock %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-    <style>
-    body{
-        background: linear-gradient(120deg, rgba(185, 99, 41, 0.86), #8643a1);
 
-    }
-
-
-    </style>
     <h1 class="text-center">Add new testimony</h1>
     <div class="row">
         <div class="col-lg-3"></div>

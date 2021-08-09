@@ -1,0 +1,31 @@
+body{
+    background: linear-gradient(120deg, rgba(185, 99, 41, 0.64), rgba(134, 67, 161, 0.56));
+    overflow: scroll;
+
+}
+
+.d-block{
+    padding: 10px;
+    margin: 30px;
+}
+
+.box{
+    padding: 10px;
+
+}
+
+
+input[type='submit']{
+    width: 10%;
+    height: 50px;
+    border: 1px solid;
+    background: #af95c9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin: 15px auto 0;
+    position: static;
+}

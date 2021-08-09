@@ -2,14 +2,19 @@
 
 {% block content %}
 {% load static %}
+    {% block extrahead %}
+    <link rel="stylesheet" href="{% static "css/comments.css" %}">
+    {% endblock %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 
-    <div class="d-block" style="background-color: #F9F1E1 ; padding:2%">
+
+    <div class="d-block">
         {% if comments %}
             {% for comment in comments %}
                 <div class="box">
                     <h5><u>{{ comment.user }}</u>: <em>{{ comment.text }}</em></h5>
-                    <hr>
+                <hr>
+
                 </div>
             {% endfor %}
         {% else %}
@@ -21,7 +26,8 @@
                 <form method="post" action="{% url 'add comment' post.id %}">
                     {% csrf_token %}
                     {{ comment_form }}
-                    <button class="btn btn-primary mt-2" type="submit">Add comment</button>
+                    <input type="submit" value="Add comment">
+
                 </form>
             </div>
 

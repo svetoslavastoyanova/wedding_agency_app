@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: montserrat;
+    background: linear-gradient(120deg, rgba(185, 99, 41, 0.67), rgba(134, 67, 161, 0.62));
+    height: 100vh;
+    overflow: scroll;
+
+}
+
+.row{
+    padding: 20px;
+    display: -moz-box;
+    margin: auto auto 30px;
+    transition: 1s;
+
+}
+
+
