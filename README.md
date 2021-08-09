@@ -32,9 +32,13 @@ Only admins have an access to the administration. From there they have full CRUD
 Mandatory requirements/tests:
 I tested mainly the views because they are connected to both the Models and the Forms.
 
+
 Bonus requirements:
 Extended Django user: For the profiles I used an extended django user with which the user can be authenticated by his email.
 Class-Based Views: I used several CBV's in my wedding_auth app.
+
+Database:
+Postgress is used for this project.
 
 I will continue working on this app but I hope you like it and I hope it has the needed functionalities.
 Best wishes, stay safe!
