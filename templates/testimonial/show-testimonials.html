@@ -3,6 +3,11 @@
 
 {% block content %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <style>
+    body{
+        background: linear-gradient(120deg, rgba(185, 99, 41, 0.67), rgba(134, 67, 161, 0.63));
+    }
+    </style>
     <h1 class='text-center'>Your Testimonials</h1>
     <div class="row">
         {% for t in testimonials %}

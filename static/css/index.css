@@ -9,7 +9,7 @@
 }
 
 h1{
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 100px;
 
 }
@@ -21,6 +21,7 @@ h1{
     background-size: cover;
     background-position: bottom;
     position: static;
+    border-radius: 10px;
 }
 
 p{
