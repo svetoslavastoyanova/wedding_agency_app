@@ -1,6 +1,9 @@
 {% extends 'shared/base.html' %}
 {% load static %}
 {% block content %}
+    {% block extrahead %}
+    <link rel="stylesheet" href="{% static "css/profile.css" %}">
+    {% endblock %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <style>
     body{
