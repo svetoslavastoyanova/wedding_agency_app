@@ -18,3 +18,9 @@ def last_name_validator(value):
         raise ValidationError('Last name must start with upper case letter!')
     return value
 
+
+def age_validator(value):
+    if value < 0:
+        raise ValidationError('Age must be a positive number!')
+
+

@@ -15,7 +15,7 @@
                     <img class="card-img-top" src="{{ t.image.url }}" alt="" width="50"
                  height="200">
                     <div class="card-body">
-                        <h5 class="card-title">{{ t.title }}</h5>
+                        <h5 class="card-title"><strong>{{ t.title }}</strong></h5>
                         <p class="card-text">{{ t.user }}</p>
                         <a href="{% url 'testimony details'  t.id%}" class="btn btn-primary">See details</a>
                     </div>

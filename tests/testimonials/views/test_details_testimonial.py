@@ -1,3 +1,4 @@
+
 from django.urls import reverse
 from tests.base.utils import TestimonialTestUtils, UserTestUtils
 from tests.base.tests import WeddingTestCase
@@ -34,9 +35,3 @@ class TestimonialDetailsTest(TestimonialTestUtils, UserTestUtils, WeddingTestCas
         }))
 
         self.assertTrue(response.context['is_user'])
-
-
-
-
-
-

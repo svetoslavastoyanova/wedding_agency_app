@@ -1,7 +1,7 @@
 import random
 from os.path import join
 from django.conf import settings
-from django.contrib.auth import get_user_model
+
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.urls import reverse
 
@@ -9,7 +9,7 @@ from djangoProject.profiles.models import Profile
 from djangoProject.testimonials.models import Testimonial
 from tests.base.tests import WeddingTestCase
 
-UserModel = get_user_model()
+
 
 
 class ProfileEditTest(WeddingTestCase):

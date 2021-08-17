@@ -1,11 +1,9 @@
-from django.contrib.auth import get_user_model
 from django.urls import reverse
 from tests.base.utils import UserTestUtils, TestimonialTestUtils
 from tests.base.tests import WeddingTestCase
-UserModel = get_user_model()
 
 
-class TestimonialDetailsTest(TestimonialTestUtils, UserTestUtils, WeddingTestCase):
+class TestimonialEditTest(TestimonialTestUtils, UserTestUtils, WeddingTestCase):
     def test_postTestimonyEditByItsUser(self):
         self.client.force_login(self.user)
         testimony = self.create_testimony(

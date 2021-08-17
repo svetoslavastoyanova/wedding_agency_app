@@ -42,7 +42,6 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{t.title}}</h5>
                                 <p class="card-text">{{ t.testimony }}</p>
-                                <p class="card-text"><strong>Owner: {{ request.user }}</strong></p>
                                 <a href="{% url 'testimony details' t.id %}" class="btn btn-primary">See details</a>
                             </div>
                         </div>

@@ -54,5 +54,3 @@ class LikeTestimonyViewTests(TestimonialTestUtils, UserTestUtils, WeddingTestCas
             .exists()
 
         self.assertFalse(like_exists)
-
-
