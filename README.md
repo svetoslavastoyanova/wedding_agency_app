@@ -1,8 +1,8 @@
 # wedding_agency_app
-This is an app for a wedding agency
+
 First I want to sincerely apologize that I hadn't added my ap to my main branch but in order not to ruin it in any way I left it like that.
 
-#Description
+Description
 This is an app for a wedding agency called "Your dream wedding".
 The Navbar is consisted of theese sections: Home, About us, Prices, Testimonials, Comments, Gallery, Sign-in, Sign-out, Add Post
 Home, About us and Prices are rendering just an html files with custom written css. For the CSS and html formatting I took inspiration from some youtubers from which I learned a lot.
