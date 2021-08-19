@@ -3,8 +3,8 @@ from tests.base.tests import WeddingTestCase
 from tests.base.utils import TestimonialTestUtils
 
 
-class CreateTestimonialViewTest(WeddingTestCase, TestimonialTestUtils):
-    def test_createTestimonial_whenLoggedInUser_shouldDeleteTestomonial(self):
+class DeleteTestimonialViewTest(WeddingTestCase, TestimonialTestUtils):
+    def test_deleteTestimonial_whenLoggedInUser_shouldDeleteTestimonial(self):
         self.client.force_login(self.user)
         testimony = self.create_testimony(
             title='My wedding',
