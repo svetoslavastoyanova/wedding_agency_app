@@ -31,7 +31,10 @@ Administration:
 Only admins have an access to the administration. From there they have full CRUD functionalities.
 
 Mandatory requirements/tests:
-I tested mainly the views because they are connected to both the Models and the Forms.
+I tested everything I could with test coverage 69%.
+
+Validators are used when editing the profile; creating and edting a testimonial.
+Form and Data Validation are used when using the sign-in and sign-up form.
 
 
 Bonus requirements:
@@ -41,8 +44,7 @@ Class-Based Views: I used several CBV's in my wedding_auth app.
 Database:
 Postgress is used for this project.
 
-I will continue working on this app but I hope you like it and I hope it has the needed functionalities.
-Best wishes, stay safe!
+I hope you like it, best wishes, stay safe!
 
 
 
