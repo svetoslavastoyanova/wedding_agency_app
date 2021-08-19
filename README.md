@@ -1,6 +1,7 @@
 # wedding_agency_app
 
-First I want to sincerely apologize that I hadn't added my ap to my main branch but in order not to ruin it in any way I left it like that.
+First I want to sincerely apologize that I hadn't added my ap to my main branch but in order not to ruin it in any way I left it like that. Also the folder 'wedding_agency_app'
+with the README file in it appeared after I installed coverage to my django(since my tests weren't running correctly without it). I left it there since I don't know whether it will destroy my project if I make an apptempt to delete it. 
 
 Description
 This is an app for a wedding agency called "Your dream wedding".
